@@ -9,6 +9,7 @@ body{
     line-height: 150%;
     color: #3c3c3c;
     background-color: #fff;
+    min-width: 280px;
 }
 .container{
     max-width: 960px;
