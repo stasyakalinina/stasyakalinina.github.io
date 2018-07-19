@@ -48,11 +48,13 @@ input[type="radio"].visually-hidden {
 }
 
 .social {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-bottom: 10px;
   width: 36px;
   height: 36px;
-  margin: 0 15px;
 
   color: #fff;
   line-height: 38px;
@@ -92,8 +94,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 80px;
 
-  color: #fff;
+  color: #ffffff;
 
   background-color: #444;
   background-image: url(../img/bg2.jpg);
@@ -103,43 +106,39 @@ input[type="radio"].visually-hidden {
 }
 
 .page-header__social-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 25px 0;
+  box-sizing: border-box;
 
   text-align: center;
 }
 
 .page-header__caption {
-  padding: 80px 0;
+  padding: 50px 0;
 
   text-align: center;
 }
 
 .page-header__title {
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 40px;
 
-  font-size: 80px;
+  font-size: 65px;
   line-height: 1.2;
 
   text-shadow: 2px 2px 4px #3c3c3c;
 }
 
 .page-header__text {
-  margin-bottom: 10px;
+  margin: 10px;
 
   font-family: "Playfair Display", "Palatino Linotype", serif;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 32px;
   font-weight: bold;
   text-shadow: 1px 1px 2px #3c3c3c;
-}
-
-.page-header__arrow {
-  margin: 30px 0;
-
-  text-align: center;
-  font-size: 30px;
-  text-shadow: 1px 1px 1px #3c3c3c;
 }
 
 .skills {
@@ -306,6 +305,7 @@ input[type="radio"].visually-hidden {
 
 .portfolio__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -313,8 +313,9 @@ input[type="radio"].visually-hidden {
 }
 
 .portfolio__item {
-  width: 33%;
-  margin-right: 2em;
+  width: 32%;
+  margin-right: 2%;
+  margin-bottom: 20px;
 }
 
 .portfolio__item:last-child {
@@ -362,6 +363,11 @@ input[type="radio"].visually-hidden {
   margin: 20px 0;
 }
 
+.contact__social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .contact__btn {
   margin: 40px 0 60px;
 
@@ -401,6 +407,14 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.single-page__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 32px;
+  line-height: 36px;
+}
+
 .single-page__img img {
   margin-bottom: 50px;
 }
@@ -408,7 +422,7 @@ input[type="radio"].visually-hidden {
 .btn-back {
   margin: 40px;
 
-  color: #fff;
+  color: #3c3c3c;
 
   border: 2px solid #3c3c3c;
 }
