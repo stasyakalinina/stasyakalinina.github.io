@@ -151,8 +151,19 @@ input[type="radio"].visually-hidden {
   margin-top: -56px;
   padding: 0;
 
+  list-style: none;
+
   border: 2px solid #3c3c3c;
   border-top-color: transparent;
+}
+
+.skills__item {
+  margin-top: 15px;
+}
+
+.skills__list ul {
+  list-style: disc;
+  padding-right: 20px;
 }
 
 .skills__title,
@@ -306,6 +317,7 @@ input[type="radio"].visually-hidden {
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
 
@@ -318,7 +330,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
 }
 
-.portfolio__item:last-child {
+.portfolio__item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -442,99 +454,188 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@media only screen and (max-width: 696px) {
-  .page-header__caption {
-    padding: 90px 0;
+@media only screen and (max-width: 982px) {
+  .about .container,
+  .contact .container {
+    border-left-color: transparent;
+    border-right-color: transparent;
   }
 }
 
-@media only screen and (max-width: 640px) {
-  .contact__list,
-  .about__text {
-    padding-left: 20px;
-    padding-right: 20px;
+@media only screen and (max-width: 750px) {
+  .portfolio {
+    padding: 50px 0;
+  }
+  
+  .portfolio__item {
+    width: 48%;
+    margin-bottom: 25px;
+    margin-right: 2%;
+  }
+  .portfolio__item:nth-child(3n) {
+    margin-right: 2%;
+  }
+  
+  .portfolio__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  
+  .portfolio__title {
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+ 
+  .page-header {
+    padding-bottom: 40px;
   }
 }
 
 @media only screen and (max-width: 580px) {
-  .portfolio__list{
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .portfolio__item {
-    flex-basis: 100%;
-    margin-bottom: 2em;
-    margin-right: 0;
-
-    text-align: center;
-  }
-  .portfolio__title {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
   .about,
   .skills,
   .portfolio,
   .contact {
-    padding: 50px 0;
+    padding: 40px 0;
   }
 
   body {
     font-size: 16px;
   }
-  .social{
-    margin: 0 5px;
+  
+  .title {
+    font-size: 24px;
+    line-height: 26px;
   }
-  .btn{
+  
+  .skills__item-title,
+  .portfolio__item-title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  
+  .page-header__caption {
+    padding: 25px 0;
+  }
+  
+  .page-header__title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  
+    font-size: 45px;
+    line-height: 48px;
+  }
+  
+  .page-header__text {
+    margin-bottom: 0;
+  
+    font-size: 20px;
+    line-height: 22px;
+  }
+  
+  .btn {
     padding: 20px 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
-
+  
+  .skills__title {
+    margin-bottom: 20px;
+  }
+  
+  .skills__list {
+    margin-top: -34px;
+  }
+  
+  .skills__item {
+    width: 95%;
+  }
+  
   .skills__item ul{
     margin: 0;
   }
 }
 
+@media only screen and (max-width: 494px) {
+  .skills__list {
+    margin-top: -47px;
+  }
+}
+
 @media only screen and (max-width: 440px) {
-  .page-header__caption {
-    padding: 40px 0;
-  }
-
-  .page-header__title {
-    font-size: 45px;
-  }
-
-  .page-header__text{
-    font-size: 16px;
-  }
-
   .social {
     width: 30px;
     height: 30px;
     margin: 0 5px;
-
-    font-size: 16px;
-    line-height: 32px;
-    text-align: center;
-
-    border-radius: 50%;
-    border: 2px solid #fff;
-
-    cursor: pointer;
   }
-
+  
+  .portfolio__item {
+    width: 100%;
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+  
+  .portfolio__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  
+  .about__text {
+    padding-bottom: 20px;
+  }
+  
   .btn {
     padding: 10px 40px;
 
     font-size: 18px;
   }
 
+  .contact__text {
+    padding: 0 20px;
+  }
+  
   .contact__btn {
     margin: 20px 0 30px;
   }
 
+  .title {
+    margin-bottom: 20px;
+  
+    font-size: 20px;
+    line-height: 22px;
+  }
+  
+  .page-header__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  
+  .page-header__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  
+  .skills__list {
+    margin-top: -43px;
+  }
+  
+  .skills__item-title,
+  .portfolio__item-title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  .about__text {
+    padding-bottom: 10px;
+  }
+  
   .page-footer {
     padding: 20px 0;
   }
 }
+
+
+@media only screen and (max-width: 338px) {
+  .skills__list {
+    margin-top: -53px;
+  }
+}
+
