@@ -27,7 +27,8 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -263,10 +264,6 @@ input[type="radio"].visually-hidden {
   background-position: center top;
 }
 
-.skills__item ul {
-  align-self: flex-start;
-}
-
 .skills__item li {
   margin: 5px;
 }
@@ -341,8 +338,10 @@ input[type="radio"].visually-hidden {
 }
 
 .portfolio__img:hover {
-  filter: drop-shadow(5px 5px 10px #444);
-  filter: drop-shadow(5px 5px 5px #3c3c3c);
+  -webkit-filter: drop-shadow(5px 5px 10px #444);
+          filter: drop-shadow(5px 5px 10px #444);
+  -webkit-filter: drop-shadow(5px 5px 5px #3c3c3c);
+          filter: drop-shadow(5px 5px 5px #3c3c3c);
 }
 
 .portfolio__item-title {
@@ -638,4 +637,3 @@ input[type="radio"].visually-hidden {
     margin-top: -53px;
   }
 }
-
