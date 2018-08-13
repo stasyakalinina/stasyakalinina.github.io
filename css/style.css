@@ -558,14 +558,6 @@ input[type="radio"].visually-hidden {
   .skills__list {
     margin-top: -47px;
   }
-}
-
-@media only screen and (max-width: 440px) {
-  .social {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-  }
   
   .portfolio__item {
     width: 100%;
@@ -575,6 +567,14 @@ input[type="radio"].visually-hidden {
   
   .portfolio__item:nth-child(3n) {
     margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .social {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
   }
   
   .about__text {
