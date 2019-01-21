@@ -168,7 +168,7 @@ input[type="radio"].visually-hidden {
 }
 
 .skills__title,
-.about__title,
+.certificates__title,
 .contact__title {
   display: flex;
   align-items: center;
@@ -179,9 +179,9 @@ input[type="radio"].visually-hidden {
 
 .skills__title::before,
 .skills__title::after,
-.about__title::before,
+.certificates__title::before,
 .contact__title::before,
-.about__title::after,
+.certificates__title::after,
 .contact__title::after {
   content: "";
 
@@ -193,13 +193,13 @@ input[type="radio"].visually-hidden {
   background-color: #fff;
 }
 
-.about__title::before,
+.certificates__title::before,
 .contact__title::before{
   margin-right: 25px;
   margin-left: -2px;
 }
 
-.about__title::after,
+.certificates__title::after,
 .contact__title::after {
   margin-left: 25px;
   margin-right: -2px;
@@ -236,7 +236,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   padding-top: 91px;
-  
+
   font-size: 24px;
 }
 
@@ -268,7 +268,7 @@ input[type="radio"].visually-hidden {
   margin: 5px;
 }
 
-.about {
+.certificates {
   padding: 100px 0;
 
   color: #fff;
@@ -279,7 +279,7 @@ input[type="radio"].visually-hidden {
   background-size: cover;
 }
 
-.about .container,
+.certificates .container,
 .contact .container {
   display: flex;
   flex-direction: column;
@@ -290,15 +290,31 @@ input[type="radio"].visually-hidden {
   border-top-color: transparent;
 }
 
-.about__text {
+.certificates__list {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
+  list-style: none;
   padding: 0 40px 40px;
 }
 
-.about__text p {
-  margin: 0;
-  margin-bottom: 10px;
+.certificates__item {
+  width: 48%;
+  margin: 0 2%;
+}
+
+.certificates__item-title {
+  margin: 20px 0 5px;
+}
+
+.certificates__item-date {
+  margin: 0 0 10px;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.certificates__item-text {
+  margin: 0 0 10px;
   padding: 0;
 }
 
@@ -347,7 +363,7 @@ input[type="radio"].visually-hidden {
 .portfolio__item-title {
   margin-top: 10px;
   margin-bottom: 5px;
-  
+
   font-size: 20px;
   line-height: 22px;
 }
@@ -454,7 +470,7 @@ input[type="radio"].visually-hidden {
 }
 
 @media only screen and (max-width: 982px) {
-  .about .container,
+  .certificates .container,
   .contact .container {
     border-left-color: transparent;
     border-right-color: transparent;
@@ -465,7 +481,7 @@ input[type="radio"].visually-hidden {
   .portfolio {
     padding: 50px 0;
   }
-  
+
   .portfolio__item {
     width: 48%;
     margin-bottom: 25px;
@@ -474,23 +490,23 @@ input[type="radio"].visually-hidden {
   .portfolio__item:nth-child(3n) {
     margin-right: 2%;
   }
-  
+
   .portfolio__item:nth-child(2n) {
     margin-right: 0;
   }
-  
+
   .portfolio__title {
     margin-top: 5px;
     margin-bottom: 25px;
   }
- 
+
   .page-header {
     padding-bottom: 40px;
   }
 }
 
 @media only screen and (max-width: 580px) {
-  .about,
+  .certificates,
   .skills,
   .portfolio,
   .contact {
@@ -500,55 +516,59 @@ input[type="radio"].visually-hidden {
   body {
     font-size: 16px;
   }
-  
+
   .title {
     font-size: 24px;
     line-height: 26px;
   }
-  
+
   .skills__item-title,
   .portfolio__item-title {
     font-size: 20px;
     line-height: 22px;
   }
-  
+
+  .certificates__item-date {
+    font-size: 14px;
+  }
+
   .page-header__caption {
     padding: 25px 0;
   }
-  
+
   .page-header__title {
     margin-top: 20px;
     margin-bottom: 30px;
-  
+
     font-size: 45px;
     line-height: 48px;
   }
-  
+
   .page-header__text {
     margin-bottom: 0;
-  
+
     font-size: 20px;
     line-height: 22px;
   }
-  
+
   .btn {
     padding: 20px 60px;
     margin-top: 20px;
     margin-bottom: 30px;
   }
-  
+
   .skills__title {
     margin-bottom: 20px;
   }
-  
+
   .skills__list {
     margin-top: -34px;
   }
-  
+
   .skills__item {
     width: 95%;
   }
-  
+
   .skills__item ul{
     margin: 0;
   }
@@ -558,13 +578,30 @@ input[type="radio"].visually-hidden {
   .skills__list {
     margin-top: -47px;
   }
-  
+
+  .certificates__list {
+    display: block;
+  }
+
+  .certificates__item {
+    width: 100%;
+    margin: 0 0 35px;
+  }
+
+  .certificates__item-title {
+    margin: 10px 0 5px;
+  }
+
+  .certificates__item-text, .certificates__item-date {
+    margin: 0;
+  }
+
   .portfolio__item {
     width: 100%;
     margin-bottom: 25px;
     margin-right: 0;
   }
-  
+
   .portfolio__item:nth-child(3n) {
     margin-right: 0;
   }
@@ -576,11 +613,11 @@ input[type="radio"].visually-hidden {
     height: 30px;
     margin: 0 5px;
   }
-  
-  .about__text {
+
+  .certificates__list {
     padding-bottom: 20px;
   }
-  
+
   .btn {
     padding: 10px 40px;
 
@@ -590,42 +627,42 @@ input[type="radio"].visually-hidden {
   .contact__text {
     padding: 0 20px;
   }
-  
+
   .contact__btn {
     margin: 20px 0 30px;
   }
 
   .title {
     margin-bottom: 20px;
-  
+
     font-size: 20px;
     line-height: 22px;
   }
-  
+
   .page-header__title {
     font-size: 36px;
     line-height: 36px;
   }
-  
+
   .page-header__text {
     font-size: 16px;
     line-height: 18px;
   }
-  
+
   .skills__list {
     margin-top: -43px;
   }
-  
+
   .skills__item-title,
   .portfolio__item-title {
     font-size: 18px;
     line-height: 20px;
   }
-  
-  .about__text {
+
+  .certificates__list {
     padding-bottom: 10px;
   }
-  
+
   .page-footer {
     padding: 20px 0;
   }
