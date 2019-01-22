@@ -34,7 +34,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -147,10 +147,10 @@ input[type="radio"].visually-hidden {
 }
 
 .skills__list {
+  display: flex;
   width: 100%;
-  margin: 0 auto;
-  margin-top: -56px;
-  padding: 0;
+  margin: -56px auto 0;
+  padding: 0 0 40px;
 
   list-style: none;
 
@@ -164,7 +164,7 @@ input[type="radio"].visually-hidden {
 
 .skills__list ul {
   list-style: disc;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .skills__title,
@@ -237,7 +237,9 @@ input[type="radio"].visually-hidden {
 
   padding-top: 91px;
 
+  font-family: "Playfair Display", "Palatino Linotype", serif;
   font-size: 24px;
+  text-align: center;
 }
 
 .skills__item-title::before {
@@ -464,8 +466,8 @@ input[type="radio"].visually-hidden {
 
 @media only screen and (max-width: 1080px) {
   .container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -478,6 +480,10 @@ input[type="radio"].visually-hidden {
 }
 
 @media only screen and (max-width: 750px) {
+  .skills__list {
+    display: block;
+  }
+
   .portfolio {
     padding: 50px 0;
   }
@@ -577,6 +583,19 @@ input[type="radio"].visually-hidden {
 @media only screen and (max-width: 494px) {
   .skills__list {
     margin-top: -47px;
+  }
+
+  .skills__item {
+    margin: 20px auto 0;
+    padding: 0;
+  }
+
+  .skills__item-title {
+    margin: 0;
+  }
+
+  .skills__item ul {
+    padding: 0 0 0 15px;
   }
 
   .certificates__list {
