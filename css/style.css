@@ -235,35 +235,13 @@ input[type="radio"].visually-hidden {
 .skills__item-title {
   position: relative;
 
-  padding-top: 91px;
-
   font-family: "Playfair Display", "Palatino Linotype", serif;
   font-size: 24px;
   text-align: center;
 }
 
-.skills__item-title::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 50%;
-
-  width: 79px;
-  height: 100px;
-  margin-left: -40px;
-}
-
-.skills__item--hard {
-  background-image: url(../img/icon_hard.png);
-  background-repeat: no-repeat;
-  background-position: center 30%;
-}
-
-.skills__item--soft {
-  background-image: url(../img/icon_soft.png);
-  background-repeat: no-repeat;
-  background-position: center top;
+.skills__icon {
+  width: 80px;
 }
 
 .skills__item li {
@@ -430,6 +408,15 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
 }
 
+.page-footer svg {
+  width: 21px;
+}
+
+.page-footer__icon-mail {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .single-page {
   padding: 50px 0;
 
@@ -472,11 +459,11 @@ input[type="radio"].visually-hidden {
 }
 
 @media only screen and (max-width: 982px) {
-  .certificates .container,
+  /* .certificates .container,
   .contact .container {
     border-left-color: transparent;
     border-right-color: transparent;
-  }
+  } */
 }
 
 @media only screen and (max-width: 750px) {
@@ -582,20 +569,20 @@ input[type="radio"].visually-hidden {
 
 @media only screen and (max-width: 494px) {
   .skills__list {
-    margin-top: -47px;
+    margin-top: -49px;
   }
 
   .skills__item {
-    margin: 20px auto 0;
+    margin: 35px auto 0;
     padding: 0;
-  }
-
-  .skills__item-title {
-    margin: 0;
   }
 
   .skills__item ul {
     padding: 0 0 0 15px;
+  }
+
+  .skills__title {
+      margin-bottom: 35px;
   }
 
   .certificates__list {
@@ -690,6 +677,6 @@ input[type="radio"].visually-hidden {
 
 @media only screen and (max-width: 338px) {
   .skills__list {
-    margin-top: -53px;
+    margin-top: -43px;
   }
 }
